@@ -19,8 +19,14 @@ struct Angle {
     friend constexpr bool operator==(Angle, Angle) = default;
 };
 
+struct Speed {
+    double meters_per_second;
+    friend constexpr bool operator==(Speed, Speed) = default;
+};
+
 // GoogleTest uses these to print values in failure messages.
 inline void PrintTo(Distance d, std::ostream* os) { *os << d.meters << " m"; }
 inline void PrintTo(Angle a, std::ostream* os) { *os << a.radians << " rad"; }
+inline void PrintTo(Speed s, std::ostream* os) { *os << s.meters_per_second << " m/s"; }
 
 }  // namespace units
