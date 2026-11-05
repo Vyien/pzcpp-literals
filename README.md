@@ -13,13 +13,18 @@ Więcej w [`lab/_start.ipynb`](lab/_start.ipynb).
 
 ## Struktura
 
-- `lab/` — notebooki JupyterLab z materiałami i ćwiczeniami; zacznij od `lab/_start.ipynb`
-  - `lab/01_builtin/` — literały wbudowane, surowe napisy, `std::literals`
-  - `lab/02_udl/` — literały definiowane przez użytkownika
-  - `lab/03_compile_time/` — literały `constexpr` i `consteval`
-  - `lab/NN_temat/exK_nazwa/` — ćwiczenie K z tematu NN (osobny projekt CMake)
-  - `lab/cmake/lab.cmake` — wspólne ustawienia CMake (C++20, GoogleTest)
-- `pyproject.toml` — środowisko Pythona dla notebooków (zarządzane przez [uv](https://docs.astral.sh/uv/))
+- [`lab/`](lab/) — notebooki JupyterLab z materiałami i ćwiczeniami; zacznij od [`lab/_start.ipynb`](lab/_start.ipynb)
+  - [`lab/01_builtin/`](lab/01_builtin/) — literały wbudowane, surowe napisy, `std::literals`
+    ([notebook](lab/01_builtin/01_builtin.ipynb))
+  - [`lab/02_udl/`](lab/02_udl/) — literały definiowane przez użytkownika
+    ([notebook](lab/02_udl/02_udl.ipynb)); ćwiczenia
+    [`ex1_distance`](lab/02_udl/ex1_distance/), [`ex2_angle`](lab/02_udl/ex2_angle/),
+    [`ex3_speed`](lab/02_udl/ex3_speed/)
+  - [`lab/03_compile_time/`](lab/03_compile_time/) — literały `constexpr` i `consteval`
+    ([notebook](lab/03_compile_time/03_compile_time.ipynb)); ćwiczenia
+    [`ex4_color`](lab/03_compile_time/ex4_color/), [`ex5_duration`](lab/03_compile_time/ex5_duration/)
+  - [`lab/cmake/lab.cmake`](lab/cmake/lab.cmake) — wspólne ustawienia CMake (C++20, GoogleTest)
+- [`pyproject.toml`](pyproject.toml) — środowisko Pythona dla notebooków (zarządzane przez [uv](https://docs.astral.sh/uv/))
 
 ## Wymagania
 
